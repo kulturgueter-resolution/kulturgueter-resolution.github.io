@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resolution zu deutschen Kulturgütern in Polen — Unterschriftensammlung</title>
 <meta name="description" content="Appell an Bundesregierung und Bundestag: Verzicht Deutschlands auf sein Eigentum an kriegsbedingt nach Polen verlagerten Büchern und Handschriften.">
+<meta name="theme-color" content="#16233B">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316233B'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23B08D45' stroke-width='3'/%3E%3Cline x1='12' y1='32' x2='52' y2='32' stroke='%239C3B2E' stroke-width='4'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Resolution zu deutschen Kulturgütern in Polen">
+<meta property="og:title" content="Für einen Verzicht Deutschlands auf sein Eigentum an Kulturgütern in Polen">
+<meta property="og:description" content="Appell an Bundesregierung und Bundestag: Verzicht Deutschlands auf sein Eigentum an kriegsbedingt nach Polen verlagerten Büchern und Handschriften. Jetzt mitzeichnen.">
+<meta property="og:url" content="https://kulturgueter-resolution.github.io/">
+<meta property="og:image" content="https://kulturgueter-resolution.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Für einen Verzicht Deutschlands auf sein Eigentum an Kulturgütern in Polen">
+<meta name="twitter:description" content="Appell an Bundesregierung und Bundestag: Verzicht auf kriegsbedingt nach Polen verlagerte Bücher und Handschriften. Jetzt mitzeichnen.">
+<meta name="twitter:image" content="https://kulturgueter-resolution.github.io/og-image.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,6 +36,7 @@
     --stamp-red:#9C3B2E;
     --verdigris:#4F6F64;
     --brass:#B08D45;
+    --muted-on-navy:#B7AC90;
     --line:rgba(36,31,24,0.18);
     --line-on-navy:rgba(232,223,200,0.22);
   }
@@ -30,6 +48,17 @@
     color:var(--ink);
     font-family:'Source Serif 4', Georgia, serif;
     line-height:1.6;
+    position:relative;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:999;
+    pointer-events:none;
+    opacity:0.045;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
   h1,h2,h3,.display{
     font-family:'Fraunces', serif;
@@ -43,6 +72,74 @@
   }
   a{color:inherit;}
   .wrap{max-width:840px; margin:0 auto; padding:0 28px;}
+
+  /* ---------- ACCESSIBILITY ---------- */
+  .skip-link{
+    position:absolute;
+    left:-999px; top:0;
+    background:var(--stamp-red);
+    color:#fff;
+    padding:12px 18px;
+    z-index:1000;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    text-decoration:none;
+  }
+  .skip-link:focus{left:16px; top:16px;}
+  a:focus-visible, button:focus-visible, .list-tab:focus-visible, .share-btn:focus-visible{
+    outline:3px solid var(--stamp-red);
+    outline-offset:2px;
+  }
+
+  /* ---------- MOTION ---------- */
+  .reveal{opacity:0; transform:translateY(16px);}
+  .reveal.is-visible{animation:riseIn .7s ease forwards; animation-delay:var(--d,0s);}
+  @keyframes riseIn{
+    to{opacity:1; transform:translateY(0);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none;}
+    .reveal.is-visible{animation:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- SUBNAV ---------- */
+  .subnav{
+    position:fixed; top:0; left:0; right:0;
+    background:rgba(14,23,40,0.97);
+    border-bottom:1px solid var(--line-on-navy);
+    transform:translateY(-100%);
+    transition:transform .3s ease;
+    z-index:200;
+  }
+  .subnav.is-visible{transform:translateY(0);}
+  .subnav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 28px;
+  }
+  .subnav-brand{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--brass);
+  }
+  .subnav-links{display:flex; gap:22px;}
+  .subnav-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:var(--muted-on-navy);
+    text-decoration:none;
+    padding-bottom:3px;
+    border-bottom:2px solid transparent;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .subnav-links a:hover, .subnav-links a.active{color:#fff; border-color:var(--stamp-red);}
+  @media (max-width:640px){
+    .subnav-brand{display:none;}
+    .subnav-links{gap:14px;}
+    .subnav-links a{font-size:10.5px;}
+  }
 
   /* ---------- HERO ---------- */
   .hero{
@@ -92,11 +189,12 @@
   .stamp{
     width:132px; height:132px;
     flex-shrink:0;
+    transform:rotate(-4deg);
   }
   .stamp-caption{
     font-family:'IBM Plex Mono', monospace;
     font-size:12px;
-    color:#B7AC90;
+    color:var(--muted-on-navy);
     max-width:32ch;
     line-height:1.5;
   }
@@ -184,7 +282,7 @@
     margin-bottom:10px;
   }
   .erst-card .name{font-family:'Fraunces',serif; font-weight:600; font-size:18px;}
-  .erst-card .affil{margin-top:6px; font-size:14px; color:#C9BE9F;}
+  .erst-card .affil{margin-top:6px; font-size:14px; color:var(--muted-on-navy);}
 
   /* Sign form */
   .form-card{
@@ -193,6 +291,16 @@
     padding:34px 36px;
   }
   .form-row{margin-bottom:18px;}
+  fieldset.form-row{border:none; padding:0; margin:0 0 18px;}
+  legend{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:7px;
+    padding:0;
+  }
   label{
     display:block;
     font-family:'IBM Plex Mono', monospace;
@@ -212,7 +320,7 @@
     color:var(--ink);
     border-radius:2px;
   }
-  input:focus, select:focus{outline:2px solid var(--verdigris); outline-offset:1px;}
+  input:focus{outline:2px solid var(--verdigris); outline-offset:1px;}
   .radio-group{display:flex; gap:20px; margin-top:4px;}
   .radio-group label{
     display:flex; align-items:center; gap:7px;
@@ -221,6 +329,7 @@
     font-size:15px;
     color:var(--ink);
     letter-spacing:0;
+    margin-bottom:0;
   }
   .consent{
     font-size:13px;
@@ -275,9 +384,28 @@
     color:var(--stamp-red);
   }
 
+  /* Teilen */
+  .share-intro{color:var(--ink-soft); margin-bottom:18px; font-size:15px;}
+  .share-row{display:flex; flex-wrap:wrap; gap:10px;}
+  .share-btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    padding:11px 18px;
+    border:1px solid var(--line);
+    background:var(--paper-light);
+    color:var(--ink);
+    text-decoration:none;
+    cursor:pointer;
+    transition:background .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .share-btn:hover{border-color:var(--verdigris); background:#fff;}
+  .share-btn.is-copied{background:var(--verdigris); color:#fff; border-color:var(--verdigris);}
+
   footer{
     background:var(--navy-deep);
-    color:#8A8266;
+    color:var(--muted-on-navy);
     padding:40px 0;
     font-family:'IBM Plex Mono', monospace;
     font-size:12px;
@@ -290,17 +418,43 @@
     .resolution-card, .form-card{padding:24px 20px;}
     section{padding:48px 0;}
   }
+
+  @media print{
+    .skip-link, .subnav, .hero .cta-row, .hero .stamp-row, form, .form-note, .list-tabs, .share-row, .share-intro, footer .foot-grid > div:last-child{display:none !important;}
+    body::before{display:none;}
+    body{background:#fff; color:#000;}
+    .hero{background:#fff; color:#000; border-bottom:2px solid #000; padding:20px 0;}
+    .hero h1{color:#000;}
+    .hero p.lede{color:#000;}
+    .resolution-card{border:none; padding:0;}
+    .erst-card{background:#fff; color:#000; border:1px solid #000;}
+    section{padding:18px 0;}
+  }
 </style>
 </head>
 <body>
 
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<nav class="subnav" id="subnav" aria-label="Seitennavigation">
+  <div class="wrap subnav-inner">
+    <span class="subnav-brand">Kulturgüter-Resolution</span>
+    <div class="subnav-links">
+      <a href="#resolution" data-section="resolution">Resolution</a>
+      <a href="#erstunterzeichner" data-section="erstunterzeichner">Erstunterzeichner</a>
+      <a href="#unterschreiben" data-section="unterschreiben">Unterschreiben</a>
+      <a href="#mitunterzeichner" data-section="mitunterzeichner">Mitzeichnende</a>
+    </div>
+  </div>
+</nav>
+
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Deutsch-polnische Kulturbeziehungen</div>
-    <h1>Für einen Verzicht Deutschlands auf sein Eigentum an Kulturgütern in Polen</h1>
-    <p class="lede">80 Jahre nach Kriegsende lagern Millionen Bücher und Handschriften aus deutschen Sammlungen in polnischen Bibliotheken — noch immer als Rechtsstreit, nicht als gemeinsames Erbe. Diese Resolution appelliert an Bundesregierung und Bundestag, den Eigentumsanspruch aufzugeben.</p>
+    <div class="eyebrow reveal" style="--d:0s">Deutsch-polnische Kulturbeziehungen</div>
+    <h1 class="reveal" style="--d:.08s">Für einen Verzicht Deutschlands auf sein Eigentum an Kulturgütern in Polen</h1>
+    <p class="lede reveal" style="--d:.16s">Mehr als acht Jahrzehnte nach Kriegsende lagern Millionen Bücher und Handschriften aus deutschen Sammlungen in polnischen Bibliotheken — noch immer als Rechtsstreit, nicht als gemeinsames Erbe. Diese Resolution appelliert an Bundesregierung und Bundestag, den Eigentumsanspruch aufzugeben.</p>
 
-    <div class="stamp-row">
+    <div class="stamp-row reveal" style="--d:.24s">
       <svg class="stamp" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gestempeltes und durchgestrichenes Wort Kriegsverlust">
         <circle cx="70" cy="70" r="62" fill="none" stroke="#B7AC90" stroke-width="2"/>
         <circle cx="70" cy="70" r="52" fill="none" stroke="#B7AC90" stroke-width="1"/>
@@ -312,14 +466,14 @@
       <div class="stamp-caption">Nutzer der Staatsbibliothek zu Berlin stoßen bis heute auf diesen Vermerk — auch wenn das gesuchte Buch nachweislich in Polen existiert.</div>
     </div>
 
-    <div class="cta-row">
+    <div class="cta-row reveal" style="--d:.32s">
       <a href="#unterschreiben" class="btn btn-primary">Resolution mitzeichnen</a>
       <a href="#resolution" class="btn btn-ghost">Volltext lesen</a>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <section id="resolution">
     <div class="wrap">
@@ -327,10 +481,10 @@
         <span class="section-num">01</span>
         <h2>Die Resolution im Wortlaut</h2>
       </div>
-      <div class="resolution-card">
-        <p>Mit der Neubestimmung der deutsch-polnischen Grenze entlang der Oder/Neiße-Linie im August 1945 befanden sich mit einem Schlag Millionen von Büchern und Handschriften aus deutschen Sammlungen auf polnischem Territorium. Seitdem sind sie in die Bestände polnischer Institutionen, vor allem Universitäten, aufgenommen worden, bleiben aber bis heute, 80 Jahre nach Kriegsende, Gegenstand rechtlicher Auseinandersetzungen zwischen Polen und Deutschland. Polen betrachtet sich selbst als rechtmäßigen Eigentümer dieser Kulturgüter. Die Staatsbibliothek zu Berlin beharrt bis heute ihrerseits darauf, das Eigentum an den Büchern und Handschriften, die zum Schutz während des Krieges von deutschen Behörden aus Berlin gen Osten ausgelagert worden waren, nicht verloren zu haben. Eine deutsch-polnische Zusammenarbeit zu diesen Kulturgütern, eine Nutzung diesseits und jenseits der deutsch-polnischen Grenze, eine Vernetzung der deutschen und polnischen Bibliothekskataloge ist dadurch nach wie vor erschwert. Nutzer der Berliner Staatsbibliothek stoßen noch bei vielen Kataloganfragen auf den Vermerk „Kriegsverlust", auch wenn bekannt ist, dass das gesuchte Buch in Polen existiert.</p>
+      <div class="resolution-card reveal">
+        <p>Mit der Neubestimmung der deutsch-polnischen Grenze entlang der Oder/Neiße-Linie im August 1945 befanden sich mit einem Schlag Millionen von Büchern und Handschriften aus deutschen Sammlungen auf polnischem Territorium. Seitdem sind sie in die Bestände polnischer Institutionen, vor allem Universitäten, aufgenommen worden, bleiben aber bis heute, mehr als acht Jahrzehnte nach Kriegsende, Gegenstand rechtlicher Auseinandersetzungen zwischen Polen und Deutschland. Polen betrachtet sich selbst als rechtmäßigen Eigentümer dieser Kulturgüter. Die Staatsbibliothek zu Berlin beharrt bis heute ihrerseits darauf, das Eigentum an den Büchern und Handschriften, die zum Schutz während des Krieges von deutschen Behörden aus Berlin gen Osten ausgelagert worden waren, nicht verloren zu haben. Eine deutsch-polnische Zusammenarbeit zu diesen Kulturgütern, eine Nutzung diesseits und jenseits der deutsch-polnischen Grenze, eine Vernetzung der deutschen und polnischen Bibliothekskataloge ist dadurch nach wie vor erschwert. Nutzer der Berliner Staatsbibliothek stoßen noch bei vielen Kataloganfragen auf den Vermerk „Kriegsverlust", auch wenn bekannt ist, dass das gesuchte Buch in Polen existiert.</p>
 
-        <p>Es ist nicht zu verstehen, dass Deutschland weiterhin auf seinem Eigentum an diesen Büchern beharrt, obwohl Polen sich dieser Kulturgüter anders als im Falle deutschen Kulturguts in der Sowjetunion nicht als Raubgut bemächtigt hat und obwohl der Vernichtungskrieg Nazi-Deutschlands gegenüber Polen uns Nachfahren zu fortwährender Verantwortung für eine Versöhnung mit Polen verpflichtet. Achtzig Jahre nach Kriegsende und 25 Jahre nach Abschluss des deutsch-polnischen Vertrags „Gute Nachbarschaft und freundschaftliche Zusammenarbeit" von 1991 herrscht in der Eigentumsfrage Stillstand. Wie lange soll das weitergehen? Weder das Völkerrecht als solches noch bestehende zwischenstaatliche Verträge hindern Deutschland daran, auf das – seiner Sicht nach weiter bestehende – Eigentum an den im Zweiten Weltkrieg ausgelagerten Büchern und Handschriften zu verzichten.</p>
+        <p>Es ist nicht zu verstehen, dass Deutschland weiterhin auf seinem Eigentum an diesen Büchern beharrt, obwohl Polen sich dieser Kulturgüter anders als im Falle deutschen Kulturguts in der Sowjetunion nicht als Raubgut bemächtigt hat und obwohl der Vernichtungskrieg Nazi-Deutschlands gegenüber Polen uns Nachfahren zu fortwährender Verantwortung für eine Versöhnung mit Polen verpflichtet. Mehr als acht Jahrzehnte nach Kriegsende und 35 Jahre nach Abschluss des deutsch-polnischen Vertrags über gute Nachbarschaft und freundschaftliche Zusammenarbeit herrscht in der Eigentumsfrage weiterhin Stillstand. Wie lange soll das weitergehen? Weder das Völkerrecht als solches noch bestehende zwischenstaatliche Verträge hindern Deutschland daran, auf das – seiner Sicht nach weiter bestehende – Eigentum an den im Zweiten Weltkrieg ausgelagerten Büchern und Handschriften zu verzichten.</p>
 
         <p>Wir, die Unterzeichner dieser Resolution, appellieren daher an die Bundesregierung und an den Deutschen Bundestag, nicht länger auf dem Eigentum an den kriegsbedingt verlagerten deutschen Büchern, die sich ohne polnisches Zutun nach Abnahme des Territoriums von Deutschland auf polnischem Boden wiederfanden, zu bestehen. Durch diesen Verzicht ließe sich die Aussöhnung mit unserem polnischen Nachbarn befördern und eine kulturelle Kooperation anstoßen, wie wir sie in den deutsch-französischen Beziehungen erreicht haben.</p>
 
@@ -354,17 +508,17 @@
         <h2>Erstunterzeichner</h2>
       </div>
       <div class="erst-grid">
-        <div class="erst-card">
+        <div class="erst-card reveal" style="--d:0s">
           <div class="role">Initiator</div>
           <div class="name">Prof. Dr. Martin Aust</div>
           <div class="affil">Universität Bonn</div>
         </div>
-        <div class="erst-card">
+        <div class="erst-card reveal" style="--d:.08s">
           <div class="role">Initiatorin</div>
           <div class="name">PD Dr. Vanessa de Senarclens</div>
           <div class="affil">Humboldt-Universität zu Berlin</div>
         </div>
-        <div class="erst-card">
+        <div class="erst-card reveal" style="--d:.16s">
           <div class="role">Initiatorin</div>
           <div class="name">Prof. Dr. Ricarda Vulpius</div>
           <div class="affil">Universität Münster</div>
@@ -379,16 +533,16 @@
         <span class="section-num">03</span>
         <h2>Resolution mitzeichnen</h2>
       </div>
-      <div class="form-card">
+      <div class="form-card reveal">
         <!-- Formular-Backend: Formspree-Endpunkt hier eintragen, siehe Anleitung -->
         <form action="https://formspree.io/f/DEINE_FORM_ID" method="POST">
-          <div class="form-row">
-            <label for="typ">Ich unterzeichne als</label>
+          <fieldset class="form-row">
+            <legend>Ich unterzeichne als</legend>
             <div class="radio-group">
               <label><input type="radio" name="typ" value="Einzelperson" checked> Einzelperson</label>
               <label><input type="radio" name="typ" value="Institution/Verband"> Institution / Verband</label>
             </div>
-          </div>
+          </fieldset>
           <div class="form-row">
             <label for="name">Name / Bezeichnung</label>
             <input type="text" id="name" name="name" required placeholder="z. B. Prof. Dr. Maria Muster">
@@ -413,14 +567,31 @@
     <div class="wrap">
       <div class="section-head">
         <span class="section-num">04</span>
-        <h2>Mitunterzeichner <span class="count-badge" id="count-badge"></span></h2>
+        <h2>Mitunterzeichner <span class="count-badge" id="count-badge" aria-live="polite"></span></h2>
       </div>
-      <div class="list-tabs">
-        <button class="list-tab active" data-tab="institutionen">Institutionen &amp; Verbände</button>
-        <button class="list-tab" data-tab="einzelpersonen">Einzelpersonen</button>
+      <div class="list-tabs" role="tablist">
+        <button class="list-tab active" data-tab="institutionen" role="tab" aria-selected="true">Institutionen &amp; Verbände</button>
+        <button class="list-tab" data-tab="einzelpersonen" role="tab" aria-selected="false">Einzelpersonen</button>
       </div>
       <ul class="signer-list" id="list-institutionen"></ul>
       <ul class="signer-list" id="list-einzelpersonen" style="display:none;"></ul>
+    </div>
+  </section>
+
+  <section id="teilen">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>Weitersagen</h2>
+      </div>
+      <p class="share-intro">Reichweite entscheidet, ob aus einem Appell Politik wird. Teile die Resolution in deinem Netzwerk.</p>
+      <div class="share-row">
+        <a class="share-btn" id="share-x" target="_blank" rel="noopener">X / Twitter</a>
+        <a class="share-btn" id="share-li" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-btn" id="share-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="share-btn" id="share-mail">E-Mail</a>
+        <button class="share-btn" id="share-copy" type="button">Link kopieren</button>
+      </div>
     </div>
   </section>
 
@@ -429,11 +600,12 @@
 <footer>
   <div class="wrap foot-grid">
     <div>Resolution zu den deutsch-polnischen Kulturbeziehungen · Stand: <span id="foot-stand"></span></div>
-    <div>Quelle &amp; Mitzeichnen: <a href="https://github.com/" target="_blank" rel="noopener">Repository auf GitHub</a></div>
+    <div>Quelle &amp; Mitzeichnen: <a href="https://github.com/kulturgueter-resolution/kulturgueter-resolution.github.io" target="_blank" rel="noopener">Repository auf GitHub</a></div>
   </div>
 </footer>
 
 <script>
+  /* ---------- Signaturen laden ---------- */
   fetch('signatures.json')
     .then(r => r.json())
     .then(data => {
@@ -473,11 +645,68 @@
 
   document.querySelectorAll('.list-tab').forEach(tab => {
     tab.addEventListener('click', () => {
-      document.querySelectorAll('.list-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.list-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
       tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
       document.getElementById('list-institutionen').style.display = tab.dataset.tab === 'institutionen' ? '' : 'none';
       document.getElementById('list-einzelpersonen').style.display = tab.dataset.tab === 'einzelpersonen' ? '' : 'none';
     });
+  });
+
+  /* ---------- Sticky Subnav + Scrollspy ---------- */
+  const subnav = document.getElementById('subnav');
+  const heroEl = document.querySelector('.hero');
+  window.addEventListener('scroll', () => {
+    subnav.classList.toggle('is-visible', window.scrollY > heroEl.offsetHeight * 0.6);
+  }, {passive:true});
+
+  const navLinks = document.querySelectorAll('.subnav-links a');
+  const spySections = document.querySelectorAll('main section[id]');
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        navLinks.forEach(l => l.classList.toggle('active', l.dataset.section === entry.target.id));
+      }
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  spySections.forEach(s => spy.observe(s));
+
+  /* ---------- Reveal-on-scroll ---------- */
+  const revealItems = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.12});
+  revealItems.forEach(el => revealObserver.observe(el));
+
+  /* ---------- Teilen ---------- */
+  const pageUrl = 'https://kulturgueter-resolution.github.io/';
+  const shareText = 'Für einen Verzicht Deutschlands auf sein Eigentum an Kulturgütern in Polen — jetzt mitzeichnen:';
+
+  document.getElementById('share-x').href =
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(pageUrl)}`;
+  document.getElementById('share-li').href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
+  document.getElementById('share-wa').href =
+    `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + pageUrl)}`;
+  document.getElementById('share-mail').href =
+    `mailto:?subject=${encodeURIComponent('Resolution: Verzicht auf Kulturgüter in Polen')}&body=${encodeURIComponent(shareText + '\n\n' + pageUrl)}`;
+
+  document.getElementById('share-copy').addEventListener('click', async (e) => {
+    const btn = e.currentTarget;
+    const original = btn.textContent;
+    try{
+      await navigator.clipboard.writeText(pageUrl);
+      btn.textContent = 'Kopiert!';
+      btn.classList.add('is-copied');
+    }catch(err){
+      btn.textContent = 'Konnte nicht kopieren';
+    }
+    setTimeout(() => { btn.textContent = original; btn.classList.remove('is-copied'); }, 2200);
   });
 </script>
 
