@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resolution zu deutschen Kulturgütern in Polen — Unterschriftensammlung</title>
 <meta name="description" content="Appell an Bundesregierung und Bundestag: Verzicht Deutschlands auf sein Eigentum an kriegsbedingt nach Polen verlagerten Büchern und Handschriften.">
-<meta name="theme-color" content="#16233B">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316233B'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23B08D45' stroke-width='3'/%3E%3Cline x1='12' y1='32' x2='52' y2='32' stroke='%239C3B2E' stroke-width='4'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#A9C0EF">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231C2E4D'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%237A3B35' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='11' fill='none' stroke='%237A3B35' stroke-width='1.5'/%3E%3C/svg%3E">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Resolution zu deutschen Kulturgütern in Polen">
@@ -27,18 +27,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#16233B;
-    --navy-deep:#0E1728;
-    --paper:#E8DFC8;
-    --paper-light:#F1EAD9;
-    --ink:#241F18;
-    --ink-soft:#4A4237;
-    --stamp-red:#9C3B2E;
-    --verdigris:#4F6F64;
-    --brass:#B08D45;
-    --muted-on-navy:#B7AC90;
-    --line:rgba(36,31,24,0.18);
-    --line-on-navy:rgba(232,223,200,0.22);
+    --ink:#1C2E4D;
+    --ink-soft:#55637C;
+    --paper:#F2F3F5;
+    --paper-light:#FAFBFC;
+    --sky:#A9C0EF;
+    --sky-deep:#8AAAEA;
+    --on-dark:#AEBBD1;
+    --line:rgba(28,46,77,0.14);
+    --line-on-navy:rgba(255,255,255,0.12);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -56,7 +53,7 @@
     inset:0;
     z-index:999;
     pointer-events:none;
-    opacity:0.045;
+    opacity:0.03;
     mix-blend-mode:overlay;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
@@ -77,7 +74,7 @@
   .skip-link{
     position:absolute;
     left:-999px; top:0;
-    background:var(--stamp-red);
+    background:var(--ink);
     color:#fff;
     padding:12px 18px;
     z-index:1000;
@@ -87,7 +84,7 @@
   }
   .skip-link:focus{left:16px; top:16px;}
   a:focus-visible, button:focus-visible, .list-tab:focus-visible, .share-btn:focus-visible{
-    outline:3px solid var(--stamp-red);
+    outline:3px solid var(--ink);
     outline-offset:2px;
   }
 
@@ -106,7 +103,7 @@
   /* ---------- SUBNAV ---------- */
   .subnav{
     position:fixed; top:0; left:0; right:0;
-    background:rgba(14,23,40,0.97);
+    background:rgba(28,46,77,0.97);
     border-bottom:1px solid var(--line-on-navy);
     transform:translateY(-100%);
     transition:transform .3s ease;
@@ -120,7 +117,7 @@
   .subnav-brand{
     font-family:'IBM Plex Mono', monospace;
     font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
-    color:var(--brass);
+    color:var(--on-dark);
   }
   .subnav-links{display:flex; gap:22px;}
   .subnav-links a{
@@ -128,13 +125,13 @@
     font-size:12px;
     text-transform:uppercase;
     letter-spacing:0.04em;
-    color:var(--muted-on-navy);
+    color:var(--on-dark);
     text-decoration:none;
     padding-bottom:3px;
     border-bottom:2px solid transparent;
     transition:color .15s ease, border-color .15s ease;
   }
-  .subnav-links a:hover, .subnav-links a.active{color:#fff; border-color:var(--stamp-red);}
+  .subnav-links a:hover, .subnav-links a.active{color:#fff; border-color:#fff;}
   @media (max-width:640px){
     .subnav-brand{display:none;}
     .subnav-links{gap:14px;}
@@ -143,12 +140,11 @@
 
   /* ---------- HERO ---------- */
   .hero{
-    background: radial-gradient(1200px 600px at 50% -10%, #1c2c4a 0%, var(--navy) 55%, var(--navy-deep) 100%);
-    color:var(--paper-light);
-    padding:64px 0 80px;
+    background:linear-gradient(180deg, var(--sky) 0%, var(--sky-deep) 100%);
+    color:var(--ink);
+    padding:60px 0 68px;
     position:relative;
-    overflow:hidden;
-    border-bottom:6px solid var(--brass);
+    border-bottom:3px solid var(--ink);
   }
   .eyebrow{
     display:inline-flex;
@@ -158,48 +154,30 @@
     font-size:12.5px;
     letter-spacing:0.12em;
     text-transform:uppercase;
-    color:var(--brass);
-    margin-bottom:26px;
+    color:var(--ink);
+    margin-bottom:24px;
   }
   .eyebrow::before{
     content:"";
     width:22px; height:1px;
-    background:var(--brass);
+    background:var(--ink);
     display:inline-block;
   }
   .hero h1{
-    font-size:clamp(30px, 5vw, 46px);
-    line-height:1.12;
-    max-width:12ch;
-    color:#fff;
+    font-size:clamp(28px, 4.6vw, 42px);
+    line-height:1.16;
+    max-width:14ch;
+    color:var(--ink);
+    font-weight:500;
   }
   .hero p.lede{
-    margin-top:22px;
-    max-width:56ch;
-    font-size:18px;
-    color:#D7CCB0;
-  }
-  .stamp-row{
-    margin-top:44px;
-    display:flex;
-    align-items:center;
-    gap:22px;
-    flex-wrap:wrap;
-  }
-  .stamp{
-    width:132px; height:132px;
-    flex-shrink:0;
-    transform:rotate(-4deg);
-  }
-  .stamp-caption{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--muted-on-navy);
-    max-width:32ch;
-    line-height:1.5;
+    margin-top:20px;
+    max-width:58ch;
+    font-size:17px;
+    color:var(--ink);
   }
   .cta-row{
-    margin-top:40px;
+    margin-top:36px;
     display:flex;
     gap:14px;
     flex-wrap:wrap;
@@ -218,34 +196,29 @@
     transition:transform .15s ease, background .15s ease;
   }
   .btn:hover{transform:translateY(-1px);}
-  .btn-primary{background:var(--stamp-red); color:#fff;}
-  .btn-primary:hover{background:#832F24;}
-  .btn-ghost{border-color:var(--line-on-navy); color:var(--paper-light);}
-  .btn-ghost:hover{background:rgba(232,223,200,0.08);}
+  .btn-primary{background:var(--ink); color:#fff;}
+  .btn-primary:hover{background:#111C2F;}
+  .btn-ghost{border-color:var(--ink); color:var(--ink);}
+  .btn-ghost:hover{background:rgba(28,46,77,0.08);}
 
   /* ---------- SECTIONS ---------- */
-  section{padding:64px 0;}
+  section{padding:60px 0;}
   .section-head{
     display:flex;
     align-items:baseline;
     gap:14px;
-    margin-bottom:30px;
+    margin-bottom:28px;
     border-bottom:1px solid var(--line);
-    padding-bottom:16px;
+    padding-bottom:14px;
   }
-  .section-num{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--stamp-red);
-  }
-  .section-head h2{font-size:24px;}
+  .section-head h2{font-size:23px; font-weight:500;}
 
   /* Resolution text */
   .resolution-card{
     background:var(--paper-light);
     border:1px solid var(--line);
-    border-left:3px solid var(--verdigris);
-    padding:34px 36px;
+    border-left:3px solid var(--ink);
+    padding:32px 34px;
     font-size:16.5px;
   }
   .resolution-card p{margin:0 0 18px;}
@@ -267,28 +240,28 @@
     gap:16px;
   }
   .erst-card{
-    background:var(--navy);
+    background:var(--ink);
     color:var(--paper-light);
     padding:22px 20px;
     position:relative;
-    border-top:3px solid var(--brass);
+    border-top:3px solid var(--paper-light);
   }
   .erst-card .role{
     font-family:'IBM Plex Mono', monospace;
     font-size:11px;
     letter-spacing:0.1em;
     text-transform:uppercase;
-    color:var(--brass);
+    color:var(--on-dark);
     margin-bottom:10px;
   }
   .erst-card .name{font-family:'Fraunces',serif; font-weight:600; font-size:18px;}
-  .erst-card .affil{margin-top:6px; font-size:14px; color:var(--muted-on-navy);}
+  .erst-card .affil{margin-top:6px; font-size:14px; color:var(--on-dark);}
 
   /* Sign form */
   .form-card{
     background:var(--paper-light);
     border:1px solid var(--line);
-    padding:34px 36px;
+    padding:32px 34px;
   }
   .form-row{margin-bottom:18px;}
   fieldset.form-row{border:none; padding:0; margin:0 0 18px;}
@@ -320,7 +293,7 @@
     color:var(--ink);
     border-radius:2px;
   }
-  input:focus{outline:2px solid var(--verdigris); outline-offset:1px;}
+  input:focus{outline:2px solid var(--ink); outline-offset:1px;}
   .radio-group{display:flex; gap:20px; margin-top:4px;}
   .radio-group label{
     display:flex; align-items:center; gap:7px;
@@ -341,8 +314,8 @@
     margin-top:18px;
     font-size:13px;
     color:var(--ink-soft);
-    background:rgba(79,111,100,0.09);
-    border-left:3px solid var(--verdigris);
+    background:rgba(28,46,77,0.05);
+    border-left:3px solid var(--ink);
     padding:12px 14px;
   }
 
@@ -359,7 +332,7 @@
     cursor:pointer;
     color:var(--ink-soft);
   }
-  .list-tab.active{background:var(--navy); color:var(--paper-light); border-color:var(--navy);}
+  .list-tab.active{background:var(--ink); color:var(--paper-light); border-color:var(--ink);}
   .signer-list{list-style:none; margin:0; padding:0;}
   .signer-list li{
     display:flex;
@@ -381,7 +354,7 @@
   .count-badge{
     font-family:'IBM Plex Mono', monospace;
     font-size:13px;
-    color:var(--stamp-red);
+    color:var(--ink);
   }
 
   /* Teilen */
@@ -400,13 +373,13 @@
     cursor:pointer;
     transition:background .15s ease, border-color .15s ease, color .15s ease;
   }
-  .share-btn:hover{border-color:var(--verdigris); background:#fff;}
-  .share-btn.is-copied{background:var(--verdigris); color:#fff; border-color:var(--verdigris);}
+  .share-btn:hover{border-color:var(--ink); background:#fff;}
+  .share-btn.is-copied{background:var(--ink); color:#fff; border-color:var(--ink);}
 
   footer{
-    background:var(--navy-deep);
-    color:var(--muted-on-navy);
-    padding:40px 0;
+    background:var(--ink);
+    color:var(--on-dark);
+    padding:38px 0;
     font-family:'IBM Plex Mono', monospace;
     font-size:12px;
   }
@@ -414,13 +387,13 @@
   footer .foot-grid{display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px;}
 
   @media (max-width:600px){
-    .hero{padding:48px 0 60px;}
-    .resolution-card, .form-card{padding:24px 20px;}
-    section{padding:48px 0;}
+    .hero{padding:44px 0 52px;}
+    .resolution-card, .form-card{padding:22px 18px;}
+    section{padding:44px 0;}
   }
 
   @media print{
-    .skip-link, .subnav, .hero .cta-row, .hero .stamp-row, form, .form-note, .list-tabs, .share-row, .share-intro, footer .foot-grid > div:last-child{display:none !important;}
+    .skip-link, .subnav, .hero .cta-row, form, .form-note, .list-tabs, .share-row, .share-intro, footer .foot-grid > div:last-child{display:none !important;}
     body::before{display:none;}
     body{background:#fff; color:#000;}
     .hero{background:#fff; color:#000; border-bottom:2px solid #000; padding:20px 0;}
@@ -454,19 +427,7 @@
     <h1 class="reveal" style="--d:.08s">Für einen Verzicht Deutschlands auf sein Eigentum an Kulturgütern in Polen</h1>
     <p class="lede reveal" style="--d:.16s">Mehr als acht Jahrzehnte nach Kriegsende lagern Millionen Bücher und Handschriften aus deutschen Sammlungen in polnischen Bibliotheken — noch immer als Rechtsstreit, nicht als gemeinsames Erbe. Diese Resolution appelliert an Bundesregierung und Bundestag, den Eigentumsanspruch aufzugeben.</p>
 
-    <div class="stamp-row reveal" style="--d:.24s">
-      <svg class="stamp" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gestempeltes und durchgestrichenes Wort Kriegsverlust">
-        <circle cx="70" cy="70" r="62" fill="none" stroke="#B7AC90" stroke-width="2"/>
-        <circle cx="70" cy="70" r="52" fill="none" stroke="#B7AC90" stroke-width="1"/>
-        <text x="70" y="58" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="#D7CCB0">KATALOGVERMERK</text>
-        <text x="70" y="78" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="14" fill="#E8DFC8">KRIEGSVERLUST</text>
-        <line x1="20" y1="70" x2="120" y2="70" stroke="#9C3B2E" stroke-width="3"/>
-        <text x="70" y="98" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1.5" fill="#9C3B2E">AUFGEHOBEN</text>
-      </svg>
-      <div class="stamp-caption">Nutzer der Staatsbibliothek zu Berlin stoßen bis heute auf diesen Vermerk — auch wenn das gesuchte Buch nachweislich in Polen existiert.</div>
-    </div>
-
-    <div class="cta-row reveal" style="--d:.32s">
+    <div class="cta-row reveal" style="--d:.24s">
       <a href="#unterschreiben" class="btn btn-primary">Resolution mitzeichnen</a>
       <a href="#resolution" class="btn btn-ghost">Volltext lesen</a>
     </div>
@@ -478,7 +439,6 @@
   <section id="resolution">
     <div class="wrap">
       <div class="section-head">
-        <span class="section-num">01</span>
         <h2>Die Resolution im Wortlaut</h2>
       </div>
       <div class="resolution-card reveal">
@@ -504,7 +464,6 @@
   <section id="erstunterzeichner">
     <div class="wrap">
       <div class="section-head">
-        <span class="section-num">02</span>
         <h2>Erstunterzeichner</h2>
       </div>
       <div class="erst-grid">
@@ -530,12 +489,11 @@
   <section id="unterschreiben">
     <div class="wrap">
       <div class="section-head">
-        <span class="section-num">03</span>
         <h2>Resolution mitzeichnen</h2>
       </div>
       <div class="form-card reveal">
         <!-- Formular-Backend: Formspree-Endpunkt hier eintragen, siehe Anleitung -->
-        <form action="https://formspree.io/f/xzdlnyze" method="POST">
+        <form action="https://formspree.io/f/DEINE_FORM_ID" method="POST">
           <fieldset class="form-row">
             <legend>Ich unterzeichne als</legend>
             <div class="radio-group">
@@ -566,7 +524,6 @@
   <section id="mitunterzeichner">
     <div class="wrap">
       <div class="section-head">
-        <span class="section-num">04</span>
         <h2>Mitunterzeichner <span class="count-badge" id="count-badge" aria-live="polite"></span></h2>
       </div>
       <div class="list-tabs" role="tablist">
@@ -581,7 +538,6 @@
   <section id="teilen">
     <div class="wrap">
       <div class="section-head">
-        <span class="section-num">05</span>
         <h2>Weitersagen</h2>
       </div>
       <p class="share-intro">Reichweite entscheidet, ob aus einem Appell Politik wird. Teile die Resolution in deinem Netzwerk.</p>
