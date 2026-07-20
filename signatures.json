@@ -1,83 +1,49 @@
 {
-  "email": [],
-  "fields": [
-    "_date",
-    "email",
-    "name",
-    "typ",
-    "zusatz"
-  ],
-  "host": null,
-  "submissions": [
-    {
-      "typ": "Einzelperson",
-      "name": "Prof. Dr. Antje Flüchter",
-      "zusatz": "Universität Bielefeld",
-      "email": "antje.fluechter@uni-bielefeld.de",
-      "_date": "2026-07-20T16:49:36.712678"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Dr. Lilija Wedel ",
-      "zusatz": "Universität Bielefeld/ Stadtarchiv Sarstedt ",
-      "email": "liliwed@web.de",
-      "_date": "2026-07-20T15:47:38.076348"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Prof. Dr. Frithjof Benjamin Schenk",
-      "zusatz": "Universität Basel",
-      "email": "Benjamin.Schenk@unibas.ch",
-      "_date": "2026-07-20T15:38:20.146743"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Prof. i.R. Dr. Hans-Heinrich Nolte",
-      "zusatz": "Leibniz-Universität Hannover",
-      "email": "hquadrat5@gmail.com",
-      "_date": "2026-07-20T15:28:19.912504"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Prof. em. Dr. Heiko Haumann",
-      "zusatz": "Elzach-Yach / Universität Basel",
-      "email": "heiko.haumann@unibas.ch",
-      "_date": "2026-07-20T15:23:17.723826"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Prof. Dr. Dr. h. c. Ludwig Steindorff",
-      "zusatz": "Christian-Albrechts-Universität zu Kiel",
-      "email": "lelgstein@aol.de",
-      "_date": "2026-07-20T15:23:00.087742"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Dr. Esther Abel ",
-      "zusatz": "Gedenkstätte Hadamar ",
-      "email": "esther.abel@web.de",
-      "_date": "2026-07-20T15:20:22.859561"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Dr. Martin Rohde",
-      "zusatz": "Universität Wien",
-      "email": "martin.rohde@univie.ac.at",
-      "_date": "2026-07-20T15:18:40.767484"
-    },
-    {
-      "typ": "Institution/Verband",
-      "name": "Prof. Dr. Heidi Hein-Kircher",
-      "zusatz": "Verband der Osteuropahistorikerinnen und -historiker e.V.",
-      "email": "heidi.hein-kircher@ruhr-uni-bochum.de",
-      "_date": "2026-07-20T15:06:20.691100"
-    },
-    {
-      "typ": "Einzelperson",
-      "name": "Prof. Dr. Constantin Goschler ",
-      "zusatz": "Ruhr-Universität Bochum",
-      "email": "Constantin.Goschler@rub.de",
-      "_date": "2026-07-20T14:54:32.123521"
-    }
-  ]
+  "stand": "20. Juli 2026",
+  "mitunterzeichner": {
+    "institutionen": [
+      {
+        "name": "Prof. Dr. Heidi Hein-Kircher",
+        "zusatz": "Verband der Osteuropahistorikerinnen und -historiker e.V."
+      }
+    ],
+    "einzelpersonen": [
+      {
+        "name": "Prof. Dr. Antje Flüchter",
+        "zusatz": "Universität Bielefeld"
+      },
+      {
+        "name": "Dr. Lilija Wedel",
+        "zusatz": "Universität Bielefeld / Stadtarchiv Sarstedt"
+      },
+      {
+        "name": "Prof. Dr. Frithjof Benjamin Schenk",
+        "zusatz": "Universität Basel"
+      },
+      {
+        "name": "Prof. i.R. Dr. Hans-Heinrich Nolte",
+        "zusatz": "Leibniz-Universität Hannover"
+      },
+      {
+        "name": "Prof. em. Dr. Heiko Haumann",
+        "zusatz": "Elzach-Yach / Universität Basel"
+      },
+      {
+        "name": "Prof. Dr. Dr. h. c. Ludwig Steindorff",
+        "zusatz": "Christian-Albrechts-Universität zu Kiel"
+      },
+      {
+        "name": "Dr. Esther Abel",
+        "zusatz": "Gedenkstätte Hadamar"
+      },
+      {
+        "name": "Dr. Martin Rohde",
+        "zusatz": "Universität Wien"
+      },
+      {
+        "name": "Prof. Dr. Constantin Goschler",
+        "zusatz": "Ruhr-Universität Bochum"
+      }
+    ]
+  }
 }
