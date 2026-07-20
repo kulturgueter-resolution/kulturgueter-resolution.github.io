@@ -492,8 +492,9 @@
         <h2>Resolution mitzeichnen</h2>
       </div>
       <div class="form-card reveal">
-        <!-- Formular-Backend: Formspree-Endpunkt hier eintragen, siehe Anleitung -->
-        <form action="https://formspree.io/f/DEINE_FORM_ID" method="POST">
+        <!-- Formular-Backend: Formspree (Formular-ID xzdlnyze) -->
+        <form action="https://formspree.io/f/xzdlnyze" method="POST">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
           <fieldset class="form-row">
             <legend>Ich unterzeichne als</legend>
             <div class="radio-group">
@@ -542,129 +543,4 @@
       </div>
       <p class="share-intro">Reichweite entscheidet, ob aus einem Appell Politik wird. Teile die Resolution in deinem Netzwerk.</p>
       <div class="share-row">
-        <a class="share-btn" id="share-x" target="_blank" rel="noopener">X / Twitter</a>
-        <a class="share-btn" id="share-li" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="share-btn" id="share-wa" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="share-btn" id="share-mail">E-Mail</a>
-        <button class="share-btn" id="share-copy" type="button">Link kopieren</button>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="wrap foot-grid">
-    <div>Resolution zu den deutsch-polnischen Kulturbeziehungen · Stand: <span id="foot-stand"></span></div>
-    <div>Quelle &amp; Mitzeichnen: <a href="https://github.com/kulturgueter-resolution/kulturgueter-resolution.github.io" target="_blank" rel="noopener">Repository auf GitHub</a></div>
-  </div>
-</footer>
-
-<script>
-  /* ---------- Signaturen laden ---------- */
-  fetch('signatures.json')
-    .then(r => r.json())
-    .then(data => {
-      document.getElementById('foot-stand').textContent = data.stand || '';
-
-      const inst = data.mitunterzeichner.institutionen || [];
-      const pers = data.mitunterzeichner.einzelpersonen || [];
-      const total = inst.length + pers.length;
-      document.getElementById('count-badge').textContent = total > 0 ? `— ${total} Mitzeichnende` : '';
-
-      renderList('list-institutionen', inst, 'Noch keine Institutionen oder Verbände eingetragen.');
-      renderList('list-einzelpersonen', pers, 'Noch keine Einzelpersonen eingetragen.');
-    })
-    .catch(() => {
-      document.getElementById('list-institutionen').innerHTML =
-        '<li class="empty-state">signatures.json konnte nicht geladen werden.</li>';
-    });
-
-  function renderList(elId, entries, emptyText){
-    const el = document.getElementById(elId);
-    if(!entries.length){
-      el.innerHTML = `<li class="empty-state">${emptyText}</li>`;
-      return;
-    }
-    el.innerHTML = entries
-      .slice()
-      .sort((a,b) => a.name.localeCompare(b.name, 'de'))
-      .map(e => `<li><span>${escapeHtml(e.name)}</span><span class="zusatz">${escapeHtml(e.zusatz || '')}</span></li>`)
-      .join('');
-  }
-
-  function escapeHtml(str){
-    const d = document.createElement('div');
-    d.textContent = str;
-    return d.innerHTML;
-  }
-
-  document.querySelectorAll('.list-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.list-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
-      tab.classList.add('active');
-      tab.setAttribute('aria-selected','true');
-      document.getElementById('list-institutionen').style.display = tab.dataset.tab === 'institutionen' ? '' : 'none';
-      document.getElementById('list-einzelpersonen').style.display = tab.dataset.tab === 'einzelpersonen' ? '' : 'none';
-    });
-  });
-
-  /* ---------- Sticky Subnav + Scrollspy ---------- */
-  const subnav = document.getElementById('subnav');
-  const heroEl = document.querySelector('.hero');
-  window.addEventListener('scroll', () => {
-    subnav.classList.toggle('is-visible', window.scrollY > heroEl.offsetHeight * 0.6);
-  }, {passive:true});
-
-  const navLinks = document.querySelectorAll('.subnav-links a');
-  const spySections = document.querySelectorAll('main section[id]');
-  const spy = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        navLinks.forEach(l => l.classList.toggle('active', l.dataset.section === entry.target.id));
-      }
-    });
-  }, {rootMargin:'-45% 0px -50% 0px'});
-  spySections.forEach(s => spy.observe(s));
-
-  /* ---------- Reveal-on-scroll ---------- */
-  const revealItems = document.querySelectorAll('.reveal');
-  const revealObserver = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, {threshold:0.12});
-  revealItems.forEach(el => revealObserver.observe(el));
-
-  /* ---------- Teilen ---------- */
-  const pageUrl = 'https://kulturgueter-resolution.github.io/';
-  const shareText = 'Für einen Verzicht Deutschlands auf sein Eigentum an Kulturgütern in Polen — jetzt mitzeichnen:';
-
-  document.getElementById('share-x').href =
-    `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(pageUrl)}`;
-  document.getElementById('share-li').href =
-    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
-  document.getElementById('share-wa').href =
-    `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + pageUrl)}`;
-  document.getElementById('share-mail').href =
-    `mailto:?subject=${encodeURIComponent('Resolution: Verzicht auf Kulturgüter in Polen')}&body=${encodeURIComponent(shareText + '\n\n' + pageUrl)}`;
-
-  document.getElementById('share-copy').addEventListener('click', async (e) => {
-    const btn = e.currentTarget;
-    const original = btn.textContent;
-    try{
-      await navigator.clipboard.writeText(pageUrl);
-      btn.textContent = 'Kopiert!';
-      btn.classList.add('is-copied');
-    }catch(err){
-      btn.textContent = 'Konnte nicht kopieren';
-    }
-    setTimeout(() => { btn.textContent = original; btn.classList.remove('is-copied'); }, 2200);
-  });
-</script>
-
-</body>
-</html>
+        <a
