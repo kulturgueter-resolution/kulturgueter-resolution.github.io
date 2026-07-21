@@ -9,6 +9,58 @@
     ],
     "einzelpersonen": [
       {
+        "name": "Prof. Dr. Martin Schulze Wessel",
+        "zusatz": "LMU München"
+      },
+      {
+        "name": "Dr. Ulrich Hofmeister",
+        "zusatz": "LMU München"
+      },
+      {
+        "name": "Prof. Dr. Malte Rolf",
+        "zusatz": "Universität Oldenburg"
+      },
+      {
+        "name": "Prof. Dr. Jörg Ganzenmüller",
+        "zusatz": "Hannah-Arendt-Institut für Totalitarismusforschung an der TU Dresden"
+      },
+      {
+        "name": "Prof. Dr. Gertrud Pickhan",
+        "zusatz": "Universitätsprofessorin a.D., Berlin"
+      },
+      {
+        "name": "Prof. Dr. Sören Urbansky",
+        "zusatz": "Ruhr-Universität Bochum"
+      },
+      {
+        "name": "Prof. i. R. Dr. Beate Fieseler",
+        "zusatz": "Heinrich-Heine-Universität Düsseldorf"
+      },
+      {
+        "name": "Prof. Dr. Stefan Rohdewald",
+        "zusatz": "Universität Leipzig"
+      },
+      {
+        "name": "Laura Eckl",
+        "zusatz": "Bergische Universität Wuppertal"
+      },
+      {
+        "name": "Dr. Jakob Stürmann",
+        "zusatz": "Universität Leipzig"
+      },
+      {
+        "name": "Ingrid Schierle",
+        "zusatz": "Universität Tübingen"
+      },
+      {
+        "name": "Prof. em. Dr. Bianka Pietrow-Ennker",
+        "zusatz": "Universität Konstanz"
+      },
+      {
+        "name": "Prof. Dr. Felix Ackermann",
+        "zusatz": "Fernuniversität in Hagen"
+      },
+      {
         "name": "Dr. Ingo Eser",
         "zusatz": "Gorxheimertal"
       },
