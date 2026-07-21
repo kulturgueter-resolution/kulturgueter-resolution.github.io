@@ -1,5 +1,5 @@
 {
-  "stand": "20. Juli 2026",
+  "stand": "21. Juli 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -8,6 +8,50 @@
       }
     ],
     "einzelpersonen": [
+      {
+        "name": "Dr. Ingo Eser",
+        "zusatz": "Gorxheimertal"
+      },
+      {
+        "name": "Prof. Dr. Maren Röger",
+        "zusatz": "Direktorin des Leibniz-Instituts für Geschichte und Kultur des östlichen Europa (GWZO), Leipzig & Professorin für Geschichte Ostmitteleuropas, Universität Leipzig"
+      },
+      {
+        "name": "Dr. Alexa von Winning",
+        "zusatz": "Universität Tübingen"
+      },
+      {
+        "name": "Tillmann Tegeler",
+        "zusatz": "Leibniz-Institut für Ost- und Südosteuropaforschung, Bibliotheksleiter, Regensburg"
+      },
+      {
+        "name": "Tilman Plath",
+        "zusatz": "Universität zu Köln"
+      },
+      {
+        "name": "Dr. Beate Eschment",
+        "zusatz": "Zentrum für Osteuropa- und internationale Studien (ZOiS), Berlin"
+      },
+      {
+        "name": "PD Dr. Yuliya von Saal",
+        "zusatz": "Institut für Zeitgeschichte, Historikerin, München"
+      },
+      {
+        "name": "Carsten Goehrke, Dr. phil., em. Prof. für Osteuropäische Geschichte",
+        "zusatz": "Universität Zürich"
+      },
+      {
+        "name": "Prof. Dr. Katja Makhotina",
+        "zusatz": "FAU Erlangen-Nürnberg"
+      },
+      {
+        "name": "Prof. Dr. Yvonne Kleinmann",
+        "zusatz": "Martin-Luther-Universität Halle-Wittenberg / Aleksander-Brückner-Zentrum für Polenstudien, Geschäftsführende Direktorin, Halle (Saale)"
+      },
+      {
+        "name": "Dr. Antje Johanning-Radžienė",
+        "zusatz": "Herder-Institut für historische Ostmitteleuropaforschung"
+      },
       {
         "name": "Prof. Dr. Antje Flüchter",
         "zusatz": "Universität Bielefeld"
