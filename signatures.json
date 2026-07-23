@@ -1,5 +1,5 @@
 {
-  "stand": "21. Juli 2026",
+  "stand": "23. Juli 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -8,6 +8,62 @@
       }
     ],
     "einzelpersonen": [
+      {
+        "name": "Prof. Dr. Klaus Gestwa",
+        "zusatz": "Universität Tübingen"
+      },
+      {
+        "name": "Dr. Franziska Davies",
+        "zusatz": "Leibniz-Zentrum für Zeithistorische Forschung (ZZF) Potsdam"
+      },
+      {
+        "name": "Prof. Dr. Jürgen Heyde",
+        "zusatz": "Martin-Luther-Universität Halle-Wittenberg"
+      },
+      {
+        "name": "Iwan-Michelangelo D'Aprile",
+        "zusatz": "Universität Potsdam"
+      },
+      {
+        "name": "Dr. Andreas Lawaty",
+        "zusatz": "Glatten"
+      },
+      {
+        "name": "Prof. Dr. Dietmar Neutatz",
+        "zusatz": "Albert-Ludwigs-Universität Freiburg"
+      },
+      {
+        "name": "PD Dr. Anna Veronika Wendland",
+        "zusatz": "Herder-Institut für historische Ostmitteleuropaforschung, Marburg"
+      },
+      {
+        "name": "Dr. Maria Rhode",
+        "zusatz": "Universität Göttingen"
+      },
+      {
+        "name": "PD Dr. Kai Struve",
+        "zusatz": "LMU München"
+      },
+      {
+        "name": "Karla Fuhrmann",
+        "zusatz": ""
+      },
+      {
+        "name": "Prof. i. R. Dr. Stefan Troebst",
+        "zusatz": "Universität Leipzig"
+      },
+      {
+        "name": "Prof. Dr. Frank Grüner",
+        "zusatz": "Universität Bielefeld"
+      },
+      {
+        "name": "Dr. Verena Laubinger",
+        "zusatz": "Georg-August-Universität Göttingen"
+      },
+      {
+        "name": "Prof. Dr. Robert Kindler",
+        "zusatz": "Freie Universität Berlin"
+      },
       {
         "name": "Prof. Dr. Martin Schulze Wessel",
         "zusatz": "LMU München"
