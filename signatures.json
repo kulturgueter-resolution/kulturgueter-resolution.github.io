@@ -1,5 +1,5 @@
 {
-  "stand": "23. Juli 2026",
+  "stand": "25. Juli 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -8,6 +8,18 @@
       }
     ],
     "einzelpersonen": [
+      {
+        "name": "PD Dr. Zaur Gasimov",
+        "zusatz": "Universität Mainz"
+      },
+      {
+        "name": "Prof. Dr. Klaus Kost",
+        "zusatz": "Ruhr-Universität Bochum"
+      },
+      {
+        "name": "PD Dr. Moritz Florin",
+        "zusatz": "Max Weber Stiftung"
+      },
       {
         "name": "Prof. Dr. Klaus Gestwa",
         "zusatz": "Universität Tübingen"
