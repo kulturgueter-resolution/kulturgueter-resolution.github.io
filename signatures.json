@@ -21,8 +21,20 @@
         "zusatz": "Universität Potsdam"
       },
       {
+        "name": "Dr. Johannes Beimesche",
+        "zusatz": ""
+      },
+      {
         "name": "Dr. Franziska Davies",
         "zusatz": "Leibniz-Zentrum für Zeithistorische Forschung (ZZF) Potsdam"
+      },
+      {
+        "name": "Prof. Dr. Cora Dietl",
+        "zusatz": "Justus-Liebig-Universität Gießen"
+      },
+      {
+        "name": "Simon Dreher",
+        "zusatz": "Universität Münster / Institut für vergleichende Städtegeschichte"
       },
       {
         "name": "Laura Eckl",
@@ -89,8 +101,16 @@
         "zusatz": "Martin-Luther-Universität Halle-Wittenberg"
       },
       {
+        "name": "Anke Hilbrenner",
+        "zusatz": "Universität Düsseldorf"
+      },
+      {
         "name": "Dr. Ulrich Hofmeister",
         "zusatz": "LMU München"
+      },
+      {
+        "name": "Dr. Sven Jaros",
+        "zusatz": "Halle"
       },
       {
         "name": "Dr. Antje Johanning-Radžienė",
@@ -119,6 +139,10 @@
       {
         "name": "Dr. Andreas Lawaty",
         "zusatz": "Glatten"
+      },
+      {
+        "name": "Kendra Lohsträter",
+        "zusatz": ""
       },
       {
         "name": "Prof. Dr. Katja Makhotina",
@@ -181,6 +205,10 @@
         "zusatz": "LMU München"
       },
       {
+        "name": "PD Dr. Lena Seauve",
+        "zusatz": "Freie Universität Berlin"
+      },
+      {
         "name": "Prof. Dr. Dr. h. c. Ludwig Steindorff",
         "zusatz": "Christian-Albrechts-Universität zu Kiel"
       },
@@ -219,6 +247,10 @@
       {
         "name": "Dr. Alexa von Winning",
         "zusatz": "Universität Tübingen"
+      },
+      {
+        "name": "Prof. Dr. Paula Wojcik",
+        "zusatz": "Universität Wien"
       }
     ]
   }
