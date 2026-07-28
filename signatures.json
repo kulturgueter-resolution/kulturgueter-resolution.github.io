@@ -1,5 +1,5 @@
 {
-  "stand": "27. Juli 2026",
+  "stand": "28. Juli 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -77,8 +77,16 @@
         "zusatz": "Universität Mainz"
       },
       {
+        "name": "Prof. Dr. Dominik Geppert",
+        "zusatz": "Universität Potsdam"
+      },
+      {
         "name": "Prof. Dr. Klaus Gestwa",
         "zusatz": "Universität Tübingen"
+      },
+      {
+        "name": "Dr. Gerhard Gnauck",
+        "zusatz": "LMU München, Mykola-Haievoi-Zentrum für moderne Geschichte"
       },
       {
         "name": "Carsten Goehrke, Dr. phil., em. Prof. für Osteuropäische Geschichte",
@@ -149,6 +157,10 @@
         "zusatz": "FAU Erlangen-Nürnberg"
       },
       {
+        "name": "Theresa Mallmann",
+        "zusatz": "Universität Wien"
+      },
+      {
         "name": "Prof. Dr. Frank Lorenz Müller",
         "zusatz": "University of St Andrews"
       },
@@ -175,6 +187,10 @@
       {
         "name": "Prof. em. Dr. Bianka Pietrow-Ennker",
         "zusatz": "Universität Konstanz"
+      },
+      {
+        "name": "Apl. Prof. Dr. Ernst Piper",
+        "zusatz": "Universität Potsdam"
       },
       {
         "name": "Tilman Plath",
@@ -271,6 +287,10 @@
       {
         "name": "Prof. Dr. Paula Wojcik",
         "zusatz": "Universität Wien"
+      },
+      {
+        "name": "Prof. Dr. Irina Wutsdorff",
+        "zusatz": "Institut für Slavistik der Universität Münster"
       }
     ]
   }
