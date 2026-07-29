@@ -1,5 +1,5 @@
 {
-  "stand": "28. Juli 2026",
+  "stand": "29. Juli 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -25,6 +25,10 @@
         "zusatz": ""
       },
       {
+        "name": "Marion Brandt",
+        "zusatz": "Universität Gdańsk"
+      },
+      {
         "name": "Dr. Franziska Davies",
         "zusatz": "Leibniz-Zentrum für Zeithistorische Forschung (ZZF) Potsdam"
       },
@@ -39,6 +43,10 @@
       {
         "name": "Laura Eckl",
         "zusatz": "Bergische Universität Wuppertal"
+      },
+      {
+        "name": "Prof. Dr. Regina Elsner",
+        "zusatz": "Universität Münster"
       },
       {
         "name": "Dr. Beate Eschment",
