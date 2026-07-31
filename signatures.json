@@ -1,5 +1,5 @@
 {
-  "stand": "29. Juli 2026",
+  "stand": "31. Juli 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -27,6 +27,10 @@
       {
         "name": "Marion Brandt",
         "zusatz": "Universität Gdańsk"
+      },
+      {
+        "name": "Dr. phil. Ute Caumanns",
+        "zusatz": "Heinrich-Heine-Universität Düsseldorf, Wissenschaftliche Mitarbeiterin"
       },
       {
         "name": "Dr. Franziska Davies",
@@ -107,6 +111,10 @@
       {
         "name": "Prof. Dr. Frank Grüner",
         "zusatz": "Universität Bielefeld"
+      },
+      {
+        "name": "Prof. Dr. François Guesnet",
+        "zusatz": "University College London"
       },
       {
         "name": "Prof. em. Dr. Heiko Haumann",
