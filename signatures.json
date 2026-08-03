@@ -1,5 +1,5 @@
 {
-  "stand": "31. Juli 2026",
+  "stand": "3. August 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -21,8 +21,16 @@
         "zusatz": "Universität Potsdam"
       },
       {
+        "name": "Dr. Alexander von Aretin",
+        "zusatz": "Rechtsanwalt, Mediator"
+      },
+      {
         "name": "Dr. Johannes Beimesche",
         "zusatz": ""
+      },
+      {
+        "name": "Prof. Dr. Kirsten Bönker",
+        "zusatz": "Nordost-Institut (IKGN e.V.) an der Universität Hamburg"
       },
       {
         "name": "Marion Brandt",
@@ -65,6 +73,10 @@
         "zusatz": "Universität Münster"
       },
       {
+        "name": "PD Dr. Gregor Feindt",
+        "zusatz": "Johannes Gutenberg-Universität Mainz"
+      },
+      {
         "name": "Prof. i. R. Dr. Beate Fieseler",
         "zusatz": "Heinrich-Heine-Universität Düsseldorf"
       },
@@ -75,6 +87,10 @@
       {
         "name": "Prof. Dr. Antje Flüchter",
         "zusatz": "Universität Bielefeld"
+      },
+      {
+        "name": "Dr. Andreas Frings",
+        "zusatz": "Universität Mainz"
       },
       {
         "name": "Karla Fuhrmann",
@@ -237,6 +253,10 @@
         "zusatz": "Université de Lausanne"
       },
       {
+        "name": "Lena Rottbeck",
+        "zusatz": "Universität Münster"
+      },
+      {
         "name": "PD Dr. Yuliya von Saal",
         "zusatz": "Institut für Zeitgeschichte, Historikerin, München"
       },
@@ -287,6 +307,10 @@
       {
         "name": "Prof. Dr. Sören Urbansky",
         "zusatz": "Ruhr-Universität Bochum"
+      },
+      {
+        "name": "Dr. Carola Vulpius",
+        "zusatz": "Richterin am Verwaltungsgericht"
       },
       {
         "name": "Dr. Lilija Wedel",
