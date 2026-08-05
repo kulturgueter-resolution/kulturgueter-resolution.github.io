@@ -1,5 +1,5 @@
 {
-  "stand": "3. August 2026",
+  "stand": "5. August 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -197,6 +197,10 @@
         "zusatz": "University of St Andrews"
       },
       {
+        "name": "PD Dr. Jan Musekamp",
+        "zusatz": "Deutsches Historisches Institut Warschau"
+      },
+      {
         "name": "Prof. Dr. Dietmar Neutatz",
         "zusatz": "Albert-Ludwigs-Universität Freiburg"
       },
@@ -259,6 +263,10 @@
       {
         "name": "PD Dr. Yuliya von Saal",
         "zusatz": "Institut für Zeitgeschichte, Historikerin, München"
+      },
+      {
+        "name": "Susanne Schattenberg",
+        "zusatz": "Direktorin der Forschungsstelle Osteuropa an der Universität Bremen"
       },
       {
         "name": "Prof. Dr. Frithjof Benjamin Schenk",
