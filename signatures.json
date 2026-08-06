@@ -1,5 +1,5 @@
 {
-  "stand": "5. August 2026",
+  "stand": "6. August 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -217,6 +217,10 @@
         "zusatz": "Universität Münster, Institut für Slavistik"
       },
       {
+        "name": "Hans-Christian Petersen",
+        "zusatz": "Carl von Ossietzky Universität Oldenburg"
+      },
+      {
         "name": "Prof. Dr. Gertrud Pickhan",
         "zusatz": "Universitätsprofessorin a.D., Berlin"
       },
@@ -231,6 +235,10 @@
       {
         "name": "Tilman Plath",
         "zusatz": "Universität zu Köln"
+      },
+      {
+        "name": "Jakob Preuß",
+        "zusatz": "Dokumentarfilmer"
       },
       {
         "name": "Dr. Maria Rhode",
