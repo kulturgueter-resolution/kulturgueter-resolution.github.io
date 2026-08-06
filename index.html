@@ -587,9 +587,7 @@
       el.innerHTML = `<li class="empty-state">${emptyText}</li>`;
       return;
     }
-    el.innerHTML = entries
-      .slice()
-      .sort((a,b) => a.name.localeCompare(b.name, 'de'))
+el.innerHTML = entries
       .map(e => `<li><span>${escapeHtml(e.name)}</span><span class="zusatz">${escapeHtml(e.zusatz || '')}</span></li>`)
       .join('');
   }
