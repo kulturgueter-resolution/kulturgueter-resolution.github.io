@@ -563,8 +563,8 @@
 
 <script>
   /* ---------- Signaturen laden ---------- */
-  fetch('signatures.json')
-    .then(r => r.json())
+fetch('signatures.json?v=' + Date.now())
+  .then(r => r.json())
     .then(data => {
       document.getElementById('foot-stand').textContent = data.stand || '';
 
