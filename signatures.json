@@ -1,5 +1,5 @@
 {
-  "stand": "6. August 2026",
+  "stand": "10. August 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -59,6 +59,10 @@
       {
         "name": "Prof. Dr. Regina Elsner",
         "zusatz": "Universität Münster"
+      },
+      {
+        "name": "Dr. Dominik Erdmann",
+        "zusatz": "Berlin"
       },
       {
         "name": "Dr. Beate Eschment",
@@ -283,6 +287,10 @@
       {
         "name": "Ingrid Schierle",
         "zusatz": "Universität Tübingen"
+      },
+      {
+        "name": "PD Dr. Stephan Scholz",
+        "zusatz": "Universität Oldenburg"
       },
       {
         "name": "Prof. Dr. Martin Schulze Wessel",
