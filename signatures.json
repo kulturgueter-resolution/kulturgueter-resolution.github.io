@@ -1,5 +1,5 @@
 {
-  "stand": "10. August 2026",
+  "stand": "12. August 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -325,6 +325,10 @@
         "zusatz": "Universität Münster"
       },
       {
+        "name": "PD Dr. Alexey Tikhomirov",
+        "zusatz": "Universität Bielefeld"
+      },
+      {
         "name": "Prof. i. R. Dr. Stefan Troebst",
         "zusatz": "Universität Leipzig"
       },
@@ -355,6 +359,10 @@
       {
         "name": "Prof. Dr. Irina Wutsdorff",
         "zusatz": "Institut für Slavistik der Universität Münster"
+      },
+      {
+        "name": "Henning von Zanthier, LL.M.",
+        "zusatz": "VON ZANTHIER & DACHOWSKI, Berlin – Poznań"
       }
     ]
   }
