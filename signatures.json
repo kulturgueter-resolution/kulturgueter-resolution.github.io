@@ -1,5 +1,5 @@
 {
-  "stand": "12. August 2026",
+  "stand": "28. August 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -23,6 +23,10 @@
       {
         "name": "Dr. Alexander von Aretin",
         "zusatz": "Rechtsanwalt, Mediator"
+      },
+      {
+        "name": "Prof. Dr. Jan Claas Behrends",
+        "zusatz": "Professur für Zeitgeschichte „Diktatur und Demokratie. Deutschland und Osteuropa von 1914 bis zur Gegenwart“, Europa-Universität Viadrina Frankfurt (Oder) / ZZF Potsdam"
       },
       {
         "name": "Dr. Johannes Beimesche",
@@ -197,6 +201,10 @@
         "zusatz": "Universität Wien"
       },
       {
+        "name": "Prof. Dr. Eduard Mühle",
+        "zusatz": "Universität Münster / Europa-Universität Viadrina Frankfurt (Oder)"
+      },
+      {
         "name": "Prof. Dr. Frank Lorenz Müller",
         "zusatz": "University of St Andrews"
       },
@@ -295,6 +303,10 @@
       {
         "name": "Prof. Dr. Martin Schulze Wessel",
         "zusatz": "LMU München"
+      },
+      {
+        "name": "Prof. Dr. Dr. h.c. mult. Gesine Schwan",
+        "zusatz": ""
       },
       {
         "name": "PD Dr. Lena Seauve",
