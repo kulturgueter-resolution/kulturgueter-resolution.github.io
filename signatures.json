@@ -1,5 +1,5 @@
 {
-  "stand": "28. August 2026",
+  "stand": "3. September 2026",
   "mitunterzeichner": {
     "institutionen": [
       {
@@ -31,6 +31,10 @@
       {
         "name": "Dr. Johannes Beimesche",
         "zusatz": ""
+      },
+      {
+        "name": "Prof. Dr. Hans-Jürgen Bömelburg",
+        "zusatz": "Justus-Liebig-Universität Gießen"
       },
       {
         "name": "Prof. Dr. Kirsten Bönker",
@@ -189,6 +193,10 @@
         "zusatz": "Glatten"
       },
       {
+        "name": "Dr. Ulrike Leitner",
+        "zusatz": "Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)"
+      },
+      {
         "name": "Kendra Lohsträter",
         "zusatz": ""
       },
@@ -223,6 +231,10 @@
       {
         "name": "Prof. i.R. Dr. Hans-Heinrich Nolte",
         "zusatz": "Leibniz-Universität Hannover"
+      },
+      {
+        "name": "Susanne Orth",
+        "zusatz": "Viadrina Center of Polish and Ukrainian Studies"
       },
       {
         "name": "Dr. Valentin Peschanskyi",
